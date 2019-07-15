@@ -102,6 +102,7 @@ function processData(data){
 
 $.getJSON('data/Sales.geoJson')
         .done(function(data){
+          console.log(data);
           let info = processData(data);
           createProportionalSymbol(info.timestamps, data);
           createLegend(info.min,info.max);
