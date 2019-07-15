@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Introduction to Leaflet</title>
+	<link rel="stylesheet" type="text/css" href="css/leaflet.css">
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="css/main.css">
+	<style>
+		.collapsible{
+			text-align: left;
+			font-size:15px;
+			width: 100%;
+			background-color: #555;
+		}
+
+		.active, .collapsible:hover{
+			background-color:crimson;
+		}
+
+		.collapsible:after{
+			content: '\002B';
+			color:white;
+			float:right;
+			
+		}
+
+		.active:after{
+			content:'\2212';
+		}
+
+		.content{
+			padding:0 10px;
+			max-height:0;
+			overflow: hidden;
+			transition:max-height 0.2s ease-out;
+			background-color:#f1f1f1;
+		}
+	</style>
+</head>
+<body>
+	<!-- Define a map container and add an id attribute -->
+	<div class="container-fluid">
+		<div class="row">
+			<div class="col-md-6">
+				<div id="map"></div>
+			</div>
+			<div class="col-md-6 viz">
+				<div class="row">
+					<div id="piechart"></div>
+				</div>
+				<div class="row" >
+					<div id="linegraph"></div>
+				</div>
+			</div>
+		</div>  
+	</div>
+	
+	<div class="container-fluid filter">
+		<select name="" id="name_filter" onchange="nameFilter(this.value)">
+			
+		</select>
+
+		<select name="area" id="area_filter" onchange="nameFilter(this.value)">
+
+		</select>
+
+		<select name="" id="col_value" onchange="attributeVisual(this.value)">
+			
+		</select>
+	</div>
+
+	<div class="container-fluid ">
+		<div class="row stats">
+			<!-- Statistics -->
+		</div>
+	</div>
+	<div class="container-fluid"> 
+		<table class="table table-responsive">
+
+		</table>
+	</div>
+
+	<button class="btn collapsible"> Open Collapsible </button>
+	<div class="content">
+		<p>	GeoJSON is a geospatial data interchange format based on JavaScript
+			Object Notation (JSON).  It defines several types of JSON objects and
+			the manner in which they are combined to represent data about
+			geographic features, their properties, and their spatial extents.
+			GeoJSON uses a geographic coordinate reference system, World Geodetic
+			System 1984, and units of decimal degrees.
+		</p>
+	</div>
+
+	<button class="btn collapsible"> Open Collapsible </button>
+	<div class="content">
+		<p>	GeoJSON is a geospatial data interchange format based on JavaScript
+			Object Notation (JSON).  It defines several types of JSON objects and
+			the manner in which they are combined to represent data about
+			geographic features, their properties, and their spatial extents.
+			GeoJSON uses a geographic coordinate reference system, World Geodetic
+			System 1984, and units of decimal degrees.
+		</p>
+	</div>
+	<!-- Call to script reference in order of use  -->
+	<script type="text/javascript" src="js/leaflet.js"></script>
+	<script type="text/javascript" src="js/nak.js"></script>
+	<script type="text/javascript" src="js/main.js"></script>
+	<script type="text/javascript" src="js/visual.js"></script>
+
+	<script src="js/highcharts.js"></script>
+	<!-- <script src="../../code/modules/exporting.js"></script>
+	<script src="../../code/modules/export-data.js"></script> -->
+	<script src="js/visualization.js"></script>
+
+	<script>
+		// var col = document.getElementsByClassName("collapsible");
+
+		// for(let i=0; i < col.length; i++){
+		// 	col[i].addEventListener('click',e => {
+		// 		console.log(this.classList);
+		// 	//	col[i].setAttribute('class','collapsible active');
+
+		// 		col[i].classList.toggle('active');
+		// 		let content = col[i].nextElementSibling;
+
+		// 		if(content.style.maxHeight){
+		// 			content.style.maxHeight = null;
+		// 		}else{
+		// 			content.style.maxHeight = content.scrollHeight+"px";
+		// 		}
+		// 	});
+		// }
+		
+	</script>
+</body>
+</html>

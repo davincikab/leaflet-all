@@ -1,0 +1,17 @@
+{
+"type": "FeatureCollection",
+"crs": { "type": "name", "properties": { "name": "urn:ogc:def:crs:OGC:1.3:CRS84" } },
+"features": [
+{ "type": "Feature", "properties": { "objectid": 6.0, "Consituency": "Bahati", "County": "Nakuru", "2010": 444420.0, "2013": 388145.0, "2016": 426669.0, "TOTAL": 424945.0, "2019": 440527.0 }, "geometry": { "type": "Point", "coordinates": [ 36.118871487309079, -0.195190494963178 ] } },
+{ "type": "Feature", "properties": { "objectid": 54.0, "Consituency": "Gilgil", "County": "Nakuru", "2010": 1331115.0, "2013": 1305202.0, "2016": 1327788.0, "TOTAL": 1276587.0, "2019": 1142204.0 }, "geometry": { "type": "Point", "coordinates": [ 36.239274058527016, -0.55512408065089 ] } },
+{ "type": "Feature", "properties": { "objectid": 130.0, "Consituency": "Kuresoi North", "County": "Nakuru", "2010": 412270.0, "2013": 383241.0, "2016": 349824.0, "TOTAL": 384440.0, "2019": 392418.0 }, "geometry": { "type": "Point", "coordinates": [ 35.600256620384123, -0.29092491527875 ] } },
+{ "type": "Feature", "properties": { "objectid": 131.0, "Consituency": "Kuresoi South", "County": "Nakuru", "2010": 506355.0, "2013": 488071.0, "2016": 554001.0, "TOTAL": 521599.0, "2019": 537957.0 }, "geometry": { "type": "Point", "coordinates": [ 35.636323367737944, -0.516310353781355 ] } },
+{ "type": "Feature", "properties": { "objectid": 185.0, "Consituency": "Molo", "County": "Nakuru", "2010": 635881.0, "2013": 591354.0, "2016": 650129.0, "TOTAL": 613687.0, "2019": 577376.0 }, "geometry": { "type": "Point", "coordinates": [ 35.781164128531366, -0.33995709928555 ] } },
+{ "type": "Feature", "properties": { "objectid": 203.0, "Consituency": "Naivasha", "County": "Nakuru", "2010": 1608810.0, "2013": 1574449.0, "2016": 1609886.0, "TOTAL": 1600548.0, "2019": 1609005.0 }, "geometry": { "type": "Point", "coordinates": [ 36.416353815542728, -0.869140797388789 ] } },
+{ "type": "Feature", "properties": { "objectid": 204.0, "Consituency": "Nakuru Town East", "County": "Nakuru", "2010": 73009.0, "2013": 44715.0, "2016": 68111.0, "TOTAL": 68570.0, "2019": 88442.0 }, "geometry": { "type": "Point", "coordinates": [ 36.117374748237523, -0.363311073912882 ] } },
+{ "type": "Feature", "properties": { "objectid": 205.0, "Consituency": "Nakuru Town West", "County": "Nakuru", "2010": 114228.0, "2013": 94762.0, "2016": 111151.0, "TOTAL": 102417.0, "2019": 89526.0 }, "geometry": { "type": "Point", "coordinates": [ 36.05773650957169, -0.348269391986095 ] } },
+{ "type": "Feature", "properties": { "objectid": 217.0, "Consituency": "Njoro", "County": "Nakuru", "2010": 806984.0, "2013": 964213.0, "2016": 844926.0, "TOTAL": 855786.0, "2019": 806993.0 }, "geometry": { "type": "Point", "coordinates": [ 35.966886339674723, -0.487193714384671 ] } },
+{ "type": "Feature", "properties": { "objectid": 235.0, "Consituency": "Rongai", "County": "Nakuru", "2010": 860160.0, "2013": 1001708.0, "2016": 899688.0, "TOTAL": 921268.0, "2019": 923496.0 }, "geometry": { "type": "Point", "coordinates": [ 35.994238492599649, -0.092579196424312 ] } },
+{ "type": "Feature", "properties": { "objectid": 258.0, "Consituency": "Subukia", "County": "Nakuru", "2010": 341292.0, "2013": 341656.0, "2016": 333998.0, "TOTAL": 333059.0, "2019": 315279.0 }, "geometry": { "type": "Point", "coordinates": [ 36.206998655461732, 0.006584422674398 ] } }
+]
+}

@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Introduction to Leaflet</title>
+	<link rel="stylesheet" type="text/css" href="css/leaflet.css">
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="css/main.css">
+	<style>
+		.collapsible{
+			text-align: left;
+			font-size:15px;
+			width: 100%;
+			background-color:crimson;
+		}
+
+		.active, .collapsible:hover{
+			background-color:crimson;
+		}
+
+		.collapsible:after{
+			content: '\002B';
+			color:white;
+			float:right;
+
+		}
+
+		.active:after{
+			content:'\2212';
+		}
+
+		.content{
+			padding:0 10px;
+			max-height:0;
+			overflow: hidden;
+			transition:max-height 0.2s ease-out;
+			background-color:#f1f1f1;
+		}
+
+		.navbar{
+			background-image: linear-gradient();
+		}
+
+	.	.navbar-nav{
+			float: right;
+		}
+	</style>
+</head>
+<body>
+	<nav class="navbar navbar-expand-lg navbar-light bg-light">
+		<div class="container-fluid">
+
+		  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+		    <span class="navbar-toggler-icon"></span>
+		  </button>
+				<a href="#" class="navbar-brand">
+					<!-- <img src="js/images/layers.png" alt="">  -->
+					Sales Report</a>
+			<div class="collapse navbar-collapse " id="navbarSupportedContent">
+				<ul class="navbar-nav my-2 ml-5">
+					<li class="nav-item"><a href="#" class="nav-link">Home</a></li>
+					<li class="nav-item"><a href="#" class="nav-link">About</a></li>
+					<li class="nav-item"><a href="#" class="nav-link">Contact</a></li>
+					<li class="nav-item"><a href="#" class="nav-link">Dashboards</a></li>
+					<li class="nav-item dropdown">
+						<a href="#" class="nav-link dropdown-toggle" id="navbardd" data-toggle="dropdown" role="button" aria-haspopup="true"
+						aria-expanded="false">Reports</a>
+						<div class="dropdown-menu" aria-labelledby="navbardd">
+          		<a class="dropdown-item" href="#">Action</a>
+              <a class="dropdown-item" href="#">Therefore</a>
+							<a class="dropdown-item" href="#">Therefore</a>
+							<a class="dropdown-item" href="#">Moreover</a>
+						</div>
+					</li>
+				</ul>
+
+				<form class="form-inline my-2 my-lg-0">
+					<input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+					<button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+				</form>
+			</div>
+		</div>
+	</nav>
+	<!-- Define a map container and add an id attribute -->
+	<div class="container-fluid">
+		<div class="row">
+			<div class="col-md-12">
+				<div id="map"></div>
+			</div>
+
+		</div>
+	</div>
+
+
+
+	<!-- Call to script reference in order of use  -->
+	<script src="js/jquery-3.1.1.min.js">	</script>
+	<script type="text/javascript" src="js/leaflet.js"></script>
+	<script type="text/javascript" src="js/main.js"></script>
+	<script src="js/bootstrap.js"></script>
+</body>
+</html>
