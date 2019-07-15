@@ -24,7 +24,7 @@ $(function (){
   });
 
   function plotFeature(data){
-      constituency = L.geoJson(data,{
+      constituency = new L.GeoJSON.AJAX(data,{
         style: style,
         onEachFeature:function (feature,layer) {
           layer.bindPopup('County: '+ feature.properties.County+" Sales "+feature.properties[2010]);
@@ -112,7 +112,7 @@ $.getJSON('data/Sales.geoJson')
 });
 
 function createProportionalSymbol(timestamps, data){
-    city = L.geoJson(data,{
+    city = new L.GeoJSON.AJAX(data,{
       pointToLayer:function(feature, latlng){
         return L.circleMarker(latlng,{
           fillColor:'grey',
