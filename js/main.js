@@ -117,12 +117,12 @@ function createProportionalSymbol(timestamps, data){
       onEachFeature:function(feature, layer){
         layer.on({
           mouseover:function(e){
-            this.openPopup();
-            this.setStyle({fillColor:'yellow',color:'yellow'});
+            e.target.openPopup();
+            e.target.setStyle({fillColor:'yellow',color:'yellow'});
           },
           mouseout:function(e){
-            this.closePopup();
-            this.setStyle({fillColor:'grey',color:'grey'});
+            e.target.closePopup();
+            e.target.setStyle({fillColor:'grey',color:'grey'});
           }
         });
       },
