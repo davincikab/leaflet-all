@@ -14,7 +14,7 @@ $(function (){
       attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
   }).addTo(map);
 
-  $.getJSON('data/nakuru.geojson')
+  $.getJSON('https://davincikab.github.io/leaflet-all/data/nakuru.geojson')
           .done(function(data){
             // let info = processData(data);
             plotFeature(data);
@@ -100,7 +100,7 @@ function processData(data){
   }
 }
 
-$.getJSON('data/Sales.geojson')
+$.getJSON('https://davincikab.github.io/leaflet-all/data/Sales.geojson')
         .done(function(data){
           console.log(data);
           let info = processData(data);
