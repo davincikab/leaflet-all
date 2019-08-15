@@ -14,7 +14,7 @@ $(function (){
       attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
   }).addTo(map);
 
-  $.getJSON('data/nakuru.geoJson')
+  $.getJSON('data/nakuru.geojson')
           .done(function(data){
             // let info = processData(data);
             plotFeature(data);
@@ -24,7 +24,7 @@ $(function (){
   });
 
   function plotFeature(data){
-      constituency = new L.GeoJSON.AJAX(data,{
+      constituency =  L.geoJson(data,{
         style: style,
         onEachFeature:function (feature,layer) {
           layer.bindPopup('County: '+ feature.properties.County+" Sales "+feature.properties[2010]);
@@ -100,7 +100,7 @@ function processData(data){
   }
 }
 
-$.getJSON('data/Sales.geoJson')
+$.getJSON('data/Sales.geojson')
         .done(function(data){
           console.log(data);
           let info = processData(data);
@@ -113,7 +113,7 @@ $.getJSON('data/Sales.geoJson')
 });
 
 function createProportionalSymbol(timestamps, data){
-    city = new L.GeoJSON.AJAX(data,{
+    city = L.geoJSON(data,{
       pointToLayer:function(feature, latlng){
         return L.circleMarker(latlng,{
           fillColor:'grey',
