@@ -35,7 +35,7 @@ $(function (){
             }
           });
         }
-      });
+      }).addTo(map);
     // layer_control.addOverlay({'Const':constituency});
 
   }
@@ -112,19 +112,23 @@ $.getJSON('https://davincikab.github.io/leaflet-all/data/Sales.geojson')
     console.log('Error during data loading');
 });
 
+function changeStyle(e){
+  let layer = e.target;
+  layer.openPopup();
+  layer.setStyle({fillColor:'yellow',color:'yellow'});
+}
+
+function resetPointStyle(e){
+  let layer = e.target;
+  layer.closePopup();
+  layer.setStyle({fillColor:'grey',color:'grey'});
+}
+  
 function createProportionalSymbol(timestamps, data){
     city = L.geoJson(data,{
       onEachFeature:function(feature, layer){
-        layer.on({
-          mouseover:function(e){
-            e.target.openPopup();
-            e.target.setStyle({fillColor:'yellow',color:'yellow'});
-          },
-          mouseout:function(e){
-            e.target.closePopup();
-            e.target.setStyle({fillColor:'grey',color:'grey'});
-          }
-        });
+        layer.on('mouseover',changeStyle);
+        layer.on('mouseout', resetPointStyle);
       },
       pointToLayer:function(feature, latlng){
         return L.circleMarker(latlng,{
