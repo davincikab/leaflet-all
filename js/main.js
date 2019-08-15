@@ -113,7 +113,7 @@ $.getJSON('https://davincikab.github.io/leaflet-all/data/Sales.geojson')
 });
 
 function createProportionalSymbol(timestamps, data){
-    city = L.geoJSON(data,{
+    city = L.geoJson(data,{
       pointToLayer:function(feature, latlng){
         return L.circleMarker(latlng,{
           fillColor:'grey',
