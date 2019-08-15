@@ -115,7 +115,7 @@ $.getJSON('https://davincikab.github.io/leaflet-all/data/Sales.geojson')
 function createProportionalSymbol(timestamps, data){
     city = L.geoJson(data,{
       onEachFeature:function(feature, layer){
-        layer..on({
+        layer.on({
           mouseover:function(e){
             this.openPopup();
             this.setStyle({fillColor:'yellow',color:'yellow'});
